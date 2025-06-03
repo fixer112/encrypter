@@ -22,10 +22,10 @@ class Encrypter
     /**
      * Create a new class instance.
      */
-    public function __construct()
+    public function __construct(?string $key=null,?string $iv=null)
     {
-        $key = env('ENCRYPTER_KEY');
-        $iv = env('ENCRYPTER_IV');
+        $key = env('ENCRYPTER_KEY',$key);
+        $iv = env('ENCRYPTER_IV',$iv);
 
         if (empty($key) || empty($iv)) {
             throw new Exception('ENCRYPTER_KEY and ENCRYPTER_IV must be set.');

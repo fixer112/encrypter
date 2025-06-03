@@ -1,0 +1,31 @@
+{
+    "name": "fixer112/encrypter",
+    "description": "Simple Simple AES-256-CBC encrypter decrypter",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "Encrypter",
+        "Cryptoghraphy"
+        
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "Fixer112\\Encrypter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "fixer112",
+            "email": "25584514+fixer112@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^12.16",
+        "phpoption/phpoption": "^1.9@dev",
+        "illuminate/filesystem": "12.x-dev",
+        "vlucas/phpdotenv": "^5.6@dev"
+    }
+}

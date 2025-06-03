@@ -1,14 +1,7 @@
 <?php
 namespace Fixer112\Encrypter;
 
-use Dotenv\Dotenv;
 use Exception;
-
-
-
-// Initialize Dotenv
-$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
-$dotenv->load();
 
 class Encrypter
 {

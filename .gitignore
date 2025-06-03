@@ -2,3 +2,4 @@ codealike.json
 /vendor/
 test/app/
 .env
+composer.lock

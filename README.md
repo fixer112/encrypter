@@ -29,12 +29,19 @@ require 'vendor/autoload.php';
 
 use Fixer112\Encrypter\Encrypter;
 
-// Load .env (if not using Laravel, you need to load it manually)
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+
 
 try {
+    // Load .env (if not using Laravel, you need to load it manually)
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+
     $encrypter = new Encrypter();
+
+    //or initiate key and iv
+
+    //$key = $iv = "password";
+    //$encrypter = new Encrypter($key,$iv);
 
     $plaintext = "Hello, world!";
     $encrypted = $encrypter->encrypt($plaintext);
